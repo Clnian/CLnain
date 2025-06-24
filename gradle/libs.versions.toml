@@ -1,0 +1,33 @@
+# gradle/libs.versions.toml
+
+[versions]
+agp = "8.9.1"  # 你指定的 Android Gradle Plugin 版本
+junit = "4.13.2"
+junitVersion = "1.1.5" # 用于 androidx.test.ext:junit
+espressoCore = "3.5.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+gson = "2.13.1" # 你已添加的 Gson
+mpandroidchart = "v3.1.0-alpha" # "实验7..." 文档中指定的 MPAndroidChart 版本
+# kotlin = "1.9.21" # (可选) 如果你使用 Kotlin
+
+[libraries]
+# AndroidX 及测试库
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" } # androidx.test.ext:junit
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" } # 如果是纯 Java 项目
+# activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" } # 如果使用 Kotlin Coroutines/ViewModelScope 等
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# MPAndroidChart (根据实验文档添加)
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+# kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" } # (可选) 如果你使用 Kotlin

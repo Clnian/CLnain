@@ -1,0 +1,9 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <!-- 基础主题（支持 ActionBar） -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

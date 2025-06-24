@@ -1,0 +1,13 @@
+<resources>
+    <color name="colorPrimary">#8E8997</color>
+    <color name="colorPrimaryDark">#004B57</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#FF9800</color>
+    <color name="textColor">#00BFFFFF</color>
+    <color name="colorBlue">#0074D9</color>
+    <color name="colorgreen">#2C3017</color>
+    <color name="colorcherry">#FE6F79</color>
+    <color name="colororange">#D9696F</color>
+    <color name="colorqing">#27D770</color>
+</resources>
